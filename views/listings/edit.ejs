@@ -1,0 +1,63 @@
+<% layout("/layouts/boilerplate") -%>
+
+    <body>
+
+        <div class="row mt-3">
+            <div class="col-8 offset-2">
+                <h3>Edit Your Listing</h3>
+
+                <form method="post" action="/listings/<%= list._id %>?_method=PUT" enctype="multipart/form-data">
+
+                    <div class="mb-3">
+
+                        <label for="title" class="form-lable">Title</label>
+                        <input class="form-control" name="listing[title]" value="<%= list.title %>" type="text" required>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="description" class="form-lable">Description</label>
+                        <textarea class="form-control" name="listing[description]"><%= list.description %></textarea required>
+
+                    </div>
+                    <div class="mb-3">
+                        <img class="rounded-3" src="<%= orginalImageUrl %>" >
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="image" class="form-lable">Upload New Image</label>
+                        <input class="form-control" name="listing[image][url]" value="<%=list.image.url%>" type="file">
+
+                    </div>
+
+                <div class="row m-0">
+                    <div class="mb-3 p-0 col-4">
+
+                        <label for="price" class="form-lable">Price</label>
+                        <input class="form-control" name="listing[price]" value="<%=list.price%>" type="text" required>
+
+                    </div>
+                    
+                    <div class=" mb-3 col-8 ">
+
+                        <label for="country" class="form-lable">Country</label>
+                        <input class="form-control" name="listing[country]" value="<%=list.country%>" type="text" required>
+
+                    </div>
+
+                </div>
+                    <div class="mb-3 ">
+                        <label for="location" class="form-lable">Location</label>
+                        <input class="form-control" name="listing[location]" value="<%=list.location%>" type="text" required>
+
+                    </div>
+
+                    
+                    <button class="btn btn-dark mt-3 mb-3">Edit</button>
+                </form>
+            </div>
+        </div>
+        <script src="/Project 1/public/js/script.js"></script>
+    </body>

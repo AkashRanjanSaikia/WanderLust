@@ -1,0 +1,112 @@
+body{
+    min-height: 100vh;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #0d0c0c !important;
+    font-weight:500 !important;
+    
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-socials{
+    width: 100%;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    
+}
+.f-info-socials i{
+    margin-right: 1rem;
+}
+.f-info-links{
+    width: 100%;
+}
+.f-info{
+    height: 8rem;
+    background-color: rgb(217, 213, 210);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+
+}
+body h2{
+    margin: 20px;
+    padding-left:10px ;
+}
+.row{
+    margin-left:10px !important;
+   
+}
+
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+    gap:1rem;
+
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.car-body{
+    padding: 0;
+}
+.card-text a{
+    text-decoration: none;
+    color: black;
+}
+.listing-link{
+    text-decoration: none;
+    color: black;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.4;
+    background-color: white;
+}
+
+
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+
+}
+.show-card{
+    padding-left:0 ;
+    padding-right:0 ;
+}
+.rev_card{
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    width: 25rem !important;
+    margin: 8px !important;
+
+    
+}
