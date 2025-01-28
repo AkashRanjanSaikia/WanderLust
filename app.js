@@ -38,9 +38,9 @@ app.use(methodOverride("_method"));
 app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public/css")))
 
-app.get("/", (req, res) => {
-    res.send("Hii, this is phase one");
-})
+// app.get("/", (req, res) => {
+//     res.send("Hii, this is phase one");
+// })
 const store = MongoStore.create({
     mongoUrl:dbUrl,
     crypto:{
